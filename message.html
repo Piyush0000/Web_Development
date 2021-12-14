@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messaging app</title>
+    <link rel="stylesheet" href="message.css">
+    
+</head>
+<body>
+
+    <h1 id="1"><u>Todo List</u></h1>
+
+    <div id="first">
+
+        <ol id = "messages"></ol>
+    <input type="text" id="textbox">
+    <button id="button">Add</button>
+    <button id="clear" type="button" onclick="refreshPage()">Clear all</button>
+    
+</div>
+
+
+    
+       
+</body>
+
+<script>
+
+    var messages = document.getElementById("messages");
+    var textbox = document.getElementById("textbox");
+    var button = document.getElementById("button");
+ 
+    button.addEventListener("click", function(){
+        var newMessage = document.createElement("li"); 
+        newMessage.innerHTML = textbox.value;
+        messages.appendChild(newMessage);
+        textbox.value = ""; 
+    });
+
+
+
+    function refreshPage (){
+    window.location.reload();
+}
+ 
+     </script>
+</html>

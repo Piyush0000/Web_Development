@@ -1,0 +1,43 @@
+*{
+    padding: auto;
+    margin: auto;
+}
+
+body{
+    margin: auto;   
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 900px;
+    font-size: 0px;
+    background-color: #000;
+}
+
+h1{
+    text-align: center;
+    justify-content: center;
+    color: rgb(39, 216, 16);
+    font-size: xxx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: darkkhaki;
+}
+
+#first{
+    padding-top: 50px;
+    text-align: center;
+}
+
+#messages {
+    color: wheat;
+    font-size: large;
+}
+
+#textbox{
+    height: 30px;
+    font-weight: 800;
+}
+
+button{
+    color: rgb(22, 6, 1);
+    background-color: rgb(250, 234, 11);
+    font-weight: 500;
+    height: 30px;
+}
